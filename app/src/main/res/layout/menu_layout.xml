@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -13,29 +13,261 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="125dp"
+            android:text="<"
+            android:textColor="#f000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="<"
-        android:textColor="#f000"
-        android:layout_marginRight="135dp"
-        android:textSize="40sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_marginTop="25dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menu"
-        android:textColor="#f000"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:layout_marginRight="30dp"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:text="Menu"
+            android:textColor="#f000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-</LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIdent1"
+
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/curintia"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="39dp"
+                android:text="Produtos do Corinthians"
+                android:textColor="#f000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIdent2"
+
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sanpas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="39dp"
+                android:text="Produtos do
+                São Paulo"
+                android:textColor="#f000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIdent3"
+
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        android:layout_below="@id/cardIdent1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/santastico"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Produtos
+                do Santos"
+                android:textColor="#f000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIdent4"
+
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        android:layout_below="@id/cardIdent2"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pal"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:text="Produtos do
+                 Palmeiras"
+                android:textColor="#f000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIdent5"
+
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        android:layout_below="@id/cardIdent3"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aLaMadri"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:text="Produtos do
+                 Real Madri"
+                android:textColor="#f000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIdent6"
+
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        android:layout_below="@id/cardIdent3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ba"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:text="Produtos do
+                 Barcelona"
+                android:textColor="#f000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
